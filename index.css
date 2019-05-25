@@ -13,6 +13,10 @@ html {
     font-family: Roboto, sans;
 }
 
+body {
+    margin-top: 10px;
+}
+
 header {
     width: 200px;
     word-wrap: normal;
@@ -87,9 +91,37 @@ to have separate colors between classes */
 }
 
 /***** Tablets *****/
-/* @media screen and (min-width: 768px) */
+@media screen and (min-width: 768px) {
+    body {
+        margin-top: 100px;
+    }
+    
+    header {
+        width: 600px;
+    }
+
+    .container {
+        width: 600px;
+    }
+
+    .question, .answer {
+        width: 560px;
+    }
+}
 
 
 
 /*****Full Screen******/
-/* @media screen and (min-width: 960px) */
+@media screen and (min-width: 960px) {
+    header {
+        width: 800px;
+    }
+
+    .container {
+        width: 800px;
+    }
+
+    .question, .answer {
+        width: 745px;
+    }
+}
