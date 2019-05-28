@@ -3,11 +3,11 @@
 }
 
 html {
-    background-image: linear-gradient(to right, blue, lightblue);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
+    /* background-image: linear-gradient(to right, blue, lightblue); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center center; */
+    /* background-attachment: fixed; */
     height: 100%;
     width: 100%;
     font-family: Roboto, sans;
@@ -23,7 +23,7 @@ header {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    color: white;
+    /* color: white; */
     font-family: sans;
 }
 
@@ -32,8 +32,12 @@ main {
     text-align: center;
 }
 
+fieldset {
+    border: none;
+}
+
 .quiz_header {
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
@@ -42,13 +46,30 @@ main {
     height: 400px;
     margin-right: auto;
     margin-left: auto;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.quiz_start {
+    margin: 30px;
+    background-color: gray;
+    padding: 10px;
+}
+
+.wireframe_links ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+}
+
+li {
+    margin: 5px;
 }
 
 .question, .answer {
@@ -58,19 +79,15 @@ main {
     margin-right: auto; 
     border-radius: 5px;
     word-wrap: normal;
-    color: blue;
+    /* color: blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 /* This is separated from answer as I intend the final verison
 to have separate colors between classes */
-.question {
-    background-color: white;
-}
-
-.answer {
-    background-color: white;
+.question, .answer {
+    background-color: gray;
 }
 
 /******Media Queries******/
