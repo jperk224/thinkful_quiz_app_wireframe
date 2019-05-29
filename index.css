@@ -36,6 +36,12 @@ fieldset {
     border: none;
 }
 
+button {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .quiz_header {
     border: 1px solid black;
     border-radius: 5px;
@@ -74,6 +80,10 @@ fieldset {
     justify-content: space-evenly;
 }
 
+.correct_answer {
+    background-color: gray;
+}
+
 .wireframe_links ul {
     display: flex;
     flex-direction: row;
@@ -85,7 +95,7 @@ li {
     margin: 5px;
 }
 
-.question, .answer {
+.question, .answer, .correct_answer {
     width: 180px;
     height: 70px;
     margin-left: auto;
@@ -134,7 +144,7 @@ to have separate colors between classes */
         width: 600px;
     }
 
-    .question, .answer {
+    .question, .answer, .correct_answer {
         width: 560px;
     }
 }
@@ -151,7 +161,7 @@ to have separate colors between classes */
         width: 800px;
     }
 
-    .question, .answer {
+    .question, .answer, .correct_answer {
         width: 745px;
     }
 }
