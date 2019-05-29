@@ -61,6 +61,19 @@ fieldset {
     padding: 10px;
 }
 
+.progress_tracker {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress_tracker ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
 .wireframe_links ul {
     display: flex;
     flex-direction: row;
